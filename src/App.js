@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import ResponsiveDrawer from "./components/PrimarySidebar";
+import GeoMap from "./components/Worldmap";
+import PrimaryAppBar from "./components/PrimaryAppbar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Grid>
+				<Grid
+					item
+					xs={10}>
+					<PrimaryAppBar />
+				</Grid>
+			</Grid>
+			{/* <Grid
+				container
+				spacing={2}>
+				<Grid
+					container
+					xs={2}>
+					<ResponsiveDrawer />
+				</Grid>
+			</Grid> */}
+		</div>
+	);
 }
 
 export default App;
