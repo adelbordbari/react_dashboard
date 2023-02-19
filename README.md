@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# React dashboard
+## a simple admin dashboard using ReactJS and MaterialUI
+- responsive, both profile menu and main drawer
+- dark mode toggle
+- geological data chart
+- pie chart
+- line chart
+- data grid
+- accordion
+- webpack/babel setup
+- uses `MaterialUI`, `Nivo Charts` and `React Router`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+clone the repository, `npm i` and run on localhost
 
-## Available Scripts
+## sample photos
+![homepage](https://user-images.githubusercontent.com/13819151/219969663-15095897-a701-4d87-9f2c-05b9f1652c75.png)
+![hompeageDark](https://user-images.githubusercontent.com/13819151/219969672-b08b9494-8bb3-4035-92db-bcbb9748c3f0.jpg)
+![drawerDark](https://user-images.githubusercontent.com/13819151/219969691-7728c059-9568-4099-889a-de2e40f519c3.png)
+![drawer](https://user-images.githubusercontent.com/13819151/219969695-6240a004-a95a-4fbc-9bfb-4db5f8f6bdf2.png)
+![line](https://user-images.githubusercontent.com/13819151/219969703-dd4e588c-d23f-4817-a386-d6b8e9a4ce77.png)
+![pie](https://user-images.githubusercontent.com/13819151/219969706-8503bf05-7fd1-4af7-b2df-9b46538d90df.png)
+![geo](https://user-images.githubusercontent.com/13819151/219969711-d4518610-bf47-4942-aad9-48d2b5ea7e32.png)
+![contactsDark](https://user-images.githubusercontent.com/13819151/219969758-429c1734-4e0d-471c-8126-4e32e6abfeb8.png)
+![faqSmallDark](https://user-images.githubusercontent.com/13819151/219969765-adaa30e5-9edc-47df-9d4e-6f4c3f9eaa2d.png)
+![dashboardMobileDark](https://user-images.githubusercontent.com/13819151/219969766-4519d172-f971-4b40-9661-02162d092621.png)
+![pieResponsive](https://user-images.githubusercontent.com/13819151/219969769-32639fca-ccd5-49a4-b04e-b9293d79943b.png)
+![geoDrawerResponsive](https://user-images.githubusercontent.com/13819151/219969773-20f15424-8c13-4ceb-a840-5452cc361e6a.png)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+feel free to fork, feedback and freakout on how badly this is written.
