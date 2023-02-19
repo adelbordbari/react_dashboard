@@ -1,6 +1,10 @@
 # React dashboard
 ## a simple admin dashboard using ReactJS and MaterialUI
-- responsive, both profile menu and main drawer
+- responsive for:
+    1. full-size desktop
+    2. small-size desktop
+    3. mobile view
+- vanishing profile menu and main drawer
 - dark mode toggle
 - geological data chart
 - pie chart
