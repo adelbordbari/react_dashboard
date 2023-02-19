@@ -15,19 +15,21 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-
+import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import { useState } from "react";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
 import Button from "@mui/material/Button";
-
 import HomeIcon from "@mui/icons-material/Home";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import PieChartIcon from "@mui/icons-material/PieChart";
+import QuizIcon from "@mui/icons-material/Quiz";
 import MapIcon from "@mui/icons-material/Map";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import ContactEmergencyIcon from "@mui/icons-material/ContactEmergency";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
 	position: "relative",
@@ -84,13 +86,13 @@ export default function PrimarySearchAppBar() {
 		setMobileMoreAnchorEl(null);
 	};
 
+	const handleMobileMenuOpen = (event) => {
+		setMobileMoreAnchorEl(event.currentTarget);
+	};
+
 	const handleMenuClose = () => {
 		setAnchorEl(null);
 		handleMobileMenuClose();
-	};
-
-	const handleMobileMenuOpen = (event) => {
-		setMobileMoreAnchorEl(event.currentTarget);
 	};
 
 	const menuId = "primary-search-account-menu";
@@ -170,26 +172,91 @@ export default function PrimarySearchAppBar() {
 		</Menu>
 	);
 
-	const data = [
-		{ name: "Dashboard", icon: <HomeIcon /> },
-		{ name: "Line Chart", icon: <ShowChartIcon /> },
-		{ name: "Pie Chart", icon: <PieChartIcon /> },
-		{ name: "Geography", icon: <MapIcon /> },
-		{ name: "Docs", icon: <LibraryBooksIcon /> },
-	];
 	const [open, setOpen] = useState(false);
 	const getList = () => (
-		<div
-			style={{ width: 250 }}
-			onClick={() => setOpen(false)}>
-			{data.map((item, index) => (
-				<ListItem
-					button
-					key={index}>
-					<ListItemIcon>{item.icon}</ListItemIcon>
-					<ListItemText primary={item.name} />
-				</ListItem>
-			))}
+		<div style={{ width: 250 }}>
+			<ListItem>
+				<Box
+					display='flex'
+					justifyContent='center'
+					alignItems='center'
+					mb='25px'>
+					<Box m='10px'>
+						<img
+							alt='profile'
+							width='100px'
+							height='100px'
+							src='../../img/user.jpg'
+						/>
+					</Box>
+					<Box textAlign='center'>
+						<Typography>Adel Bordbari</Typography>
+						<Typography>React</Typography>
+					</Box>
+				</Box>
+			</ListItem>
+			<ListItem
+				button
+				component={Link}
+				to='/'>
+				<ListItemIcon>
+					<HomeIcon />
+				</ListItemIcon>
+				<ListItemText primary='Dashboard' />
+			</ListItem>
+			<Divider />
+			<ListItem
+				button
+				component={Link}
+				to='/line'>
+				<ListItemIcon>
+					<ShowChartIcon />
+				</ListItemIcon>
+				<ListItemText primary='Line Chart' />
+			</ListItem>
+			<ListItem
+				button
+				component={Link}
+				to='/pie'>
+				<ListItemIcon>
+					<PieChartIcon />
+				</ListItemIcon>
+				<ListItemText primary='Pie Chart' />
+			</ListItem>
+			<ListItem
+				button
+				component={Link}
+				to='/geo'>
+				<ListItemIcon>
+					<MapIcon />
+				</ListItemIcon>
+				<ListItemText primary='Geography' />
+			</ListItem>
+			<Divider />
+			<ListItem
+				button
+				component={Link}
+				to='/contacts'>
+				<ListItemIcon>
+					<ContactEmergencyIcon />
+				</ListItemIcon>
+				<ListItemText primary='Contacts' />
+			</ListItem>
+			<ListItem
+				button
+				component={Link}
+				to='/faq'>
+				<ListItemIcon>
+					<QuizIcon />
+				</ListItemIcon>
+				<ListItemText primary='FAQ' />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<LibraryBooksIcon />
+				</ListItemIcon>
+				<ListItemText primary='Docs' />
+			</ListItem>
 		</div>
 	);
 
@@ -205,6 +272,7 @@ export default function PrimarySearchAppBar() {
 						sx={{ mr: 2 }}
 						onClick={() => setOpen(true)}>
 						<Drawer
+							variant='temporary'
 							open={open}
 							anchor={"left"}
 							onClose={() => setOpen(false)}>
@@ -217,7 +285,7 @@ export default function PrimarySearchAppBar() {
 						noWrap
 						component='div'
 						sx={{ display: { xs: "none", sm: "block" } }}>
-						Adel P. Bordbari
+						Hello World
 					</Typography>
 					<Search>
 						<SearchIconWrapper>
